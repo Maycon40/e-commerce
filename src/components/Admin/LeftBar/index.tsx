@@ -14,21 +14,12 @@ import Data from "../../Data/Admin";
 const Leftbar: NextPage = () => {
     const { leftBar, setLeftBar } = useContext(AuthContext);
     const myRef = useRef<HTMLDivElement>();
-    
-    const mudar = () => {
-        if(!leftBar){
-            myRef.current.style.display = "none"
-        } else {
-            myRef.current.style.display = "block"
-        }
-        setLeftBar(!leftBar)
-    }
 
     return (
         <>
             <div className={styles.leftBar}>
                 <div className={styles.title}>
-                    <button onClick={mudar}><IoIcons.IoMdMenu/></button>
+                    <button><IoIcons.IoMdMenu/></button>
 
                     <div className={styles.img}>
                         <Link href="http://localhost:3000/admin"><h1>JFSolu</h1></Link>
