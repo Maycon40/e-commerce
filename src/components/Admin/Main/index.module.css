@@ -1,0 +1,239 @@
+.mainContainer {
+    grid-area: main;
+    overflow-y: auto;
+
+    padding: 20px 35px;
+}
+
+.mainTitle {
+    display: flex;
+    align-items: center;
+}
+
+.mainGreeting h1 {
+    color: #2e4a55;
+
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.mainGreeting p {
+    color: #a5aaad;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mainCards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 70px;
+
+    padding: 25px;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+}
+
+.cardInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardInner span {
+    font-size: 25px;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.chartsLeft {
+    background: #fff;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+}
+
+.chartsLeftTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chartsLeftTitle div h1 {
+    color: #2e4a66;
+
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.chartsLeftTitle div p {
+    color: #a5aaad;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chartsLeftTitle svg {
+    color: #fff;
+
+    font-size: 20px;
+
+    background: #ffc100;
+
+    border: 0px solid #000;
+    border-radius: 200px 0 200px 200px;
+    -moz-border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius: 200px 0px 200px 200px;
+
+    padding: 15px;
+}
+
+.chartsRight {
+    background: #fff;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+
+    padding: 25px;
+}
+
+.chartsRightTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chartsRightTitle div h1 {
+    color: #2e4a66;
+
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.chartsRightTitle div p {
+    color: #a5aaad;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chartsLeftTitle svg {
+    color: #fff;
+
+    background: #39447a;
+
+    font-size: 20px;
+    
+    border: 0px solid #000;
+    border-radius: 200px 0px 200px 200px;
+
+    padding: 15px;
+}
+
+.chartsRightCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.card1 {
+    color: #35a4ba;
+    background: #d1ecf1;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.card2 {
+    color: #38e1b0;
+    background: #d2f9ee;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.card3 {
+    color: #d6d8d9;
+    background: #3a3e41;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.card4 {
+    color: #fdddcd;
+    background: #f65a6f;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+@media only screen and (max-width: 855px) {
+    .mainCards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        margin-bottom: 0;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+
+        margin-top: 30px;
+    }
+
+    .chartsRightCards {
+        grid-template-columns: 1fr;
+        
+        align-items: center;
+
+        margin-top: 30px;
+    }
+}

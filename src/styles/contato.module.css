@@ -1,0 +1,63 @@
+.section {
+    position: relative;
+
+    width: 100vw;
+    height: 30vh;
+
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/19/21/38/nature-6639127_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    z-index: 0;
+}
+
+.section h1 {
+    color: rgb(247, 247, 247);
+
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    right: 38%;
+    bottom: 60%;
+}
+
+.section2 {
+    width: 100vw;
+    height: 25vw;
+
+    padding: 150px 50px 0 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section2 .info {
+    width: 20vw;
+    height: 39vh;
+
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section2 .info p {
+    color: #858585;
+}
+
+.section2 .info h3 {
+    font-weight: 700;
+}
+
+.icon {
+    background-color: rgb(200, 213, 255);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+    color: rgb(103, 156, 255);
+}

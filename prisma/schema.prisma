@@ -1,0 +1,17 @@
+datasource db {
+  provider = "mongodb"
+  url = "mongodb://127.0.0.1:27017/database"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures=["mongoDb"]
+}
+
+model Cadastro {
+  id       String @id @default(cuid()) @map("_id")
+  email    String    @unique
+  name     String
+  password String
+  admin    Boolean @default(false)
+}

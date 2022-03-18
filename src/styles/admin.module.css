@@ -1,0 +1,132 @@
+.container {
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: 5fr repeat(3, 1fr);
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    'leftbar nav nav nav'
+    'leftbar main main main';
+
+    height: 100vh;
+}
+
+/* leftBar */
+
+.leftBar {
+    background-color: #020509;
+
+    grid-area: leftbar;
+    overflow-y: auto;
+
+    padding: 20px;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.leftBar .title {
+    color: #f3f4f6;
+
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.leftBar .img {
+    display: flex;
+    align-items: center;
+}
+
+.leftBar .title div img {
+    width: 55px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.leftBar .title div h1 {
+    font-size: 18px;
+
+    display: inline;
+
+    margin-left: 15px;
+}
+
+.leftBar .menu h2 {
+    color: #3ea175;
+
+    font-size: 16px;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    padding: 0 10px;
+
+    font-weight: 700;
+}
+
+.leftBarLink {
+    color: #f3f4f6;
+
+    padding: 10px;
+
+    border-radius: 3px;
+
+    margin-bottom: 5px;
+}
+
+.leftBarLink a {
+    color: #f3f4f6 !important;
+}
+
+.leftBarLink > a {
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.leftBarLink > a:focus {
+    background: rgba(62, 161, 117, 0.3);
+
+    padding: 7px;
+
+    border-radius: 3px;
+}
+
+.leftBarLink i {
+    margin-right: 10px;
+
+    font-size: 18px;
+}
+
+.leftBar .logout {
+    background: none;
+
+    color: #e65061;
+
+    border: none;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        display: flex;
+    }
+
+    .leftBar {
+        display: none;
+    }
+}

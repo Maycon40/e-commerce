@@ -1,0 +1,68 @@
+.navbar {
+    background: #fff;
+
+    height: 60px;
+
+    grid-area: nav;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid lightgray;
+}
+
+.navbarLeft > a {
+    margin-right: 30px;
+
+    text-decoration: none;
+
+    color: #a5aaad;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navbarLeft .active {
+    color: #265acc;
+
+    border-bottom: 3px solid #265acc;
+
+    padding-bottom: 12px;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarRight a {
+    margin-left: 20px;
+
+    text-decoration: none;
+}
+
+.navbarRight a svg {
+    color: #a5aaad;
+
+    background: #fff;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 16px;
+
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #fff;
+
+    padding: 3px;
+}
+
+.navbar .navbarRight a .user {
+    color: rgb(0, 110, 255);
+
+    background: yellow;
+}

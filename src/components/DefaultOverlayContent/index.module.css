@@ -1,0 +1,112 @@
+.overlayContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.overlayContent header {
+    text-align: center;
+
+    margin-top: 16.5vh;
+
+    z-index: 1;
+}
+
+.overlayContent header h1 {
+    color: rgb(57, 60, 65);
+
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    line-height: 48px;
+}
+
+.overlayContent header h2 {
+    color: rgb(92, 94, 98);
+
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 20px;
+}
+
+.overlayContent .pelicula {
+    background: rgba(255, 255, 255, 0.05);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 90vh;
+
+    z-index: 1;
+}
+
+.overlayContent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 90vh;
+
+    z-index: 0;
+}
+
+.overlayContent .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 110px;
+}
+
+.overlayContent button {
+    background: rgb(26, 23, 32);
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .4px;
+
+    text-transform: uppercase;
+
+    position: relative;
+
+    padding: 13px 40px;
+
+    border: none;
+    border-radius: 20px;
+    outline: 0;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.overlayContent button + button {
+    margin: 10px 0 0 0;
+}
+
+.overlayContent .buttons .white {
+    background: #fff;
+    color: rgb(26, 23, 32);
+}
+
+@media (min-width: 600px) {
+    .overlayContent .buttons {
+        flex-direction: row;
+        margin-bottom: 90px;
+    }
+
+    .overlayContent button + button {
+        margin: 0 0 0 10px;
+    }
+}

@@ -1,0 +1,145 @@
+.header {
+    background-color: #ffffffcc;
+    box-shadow: 0 1px 6px rgb(126, 126, 126);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100vw;
+    height: 10vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    z-index: 10;
+}
+
+.header nav {
+    width: 90vw;
+    height: 8vh;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header nav .logos {
+    width: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header nav div p {
+    color: black;
+    font-weight: 800;
+}
+  
+.header nav ul {
+    list-style: none;
+  
+    width: 60vw;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header nav ul button {
+    background-color: #ffffffcc;
+    color: #858585;
+  
+    border: none;
+  
+    font-size: 17px;
+    font-weight: 700;
+  
+    cursor: pointer;
+}
+  
+.header nav ul li {
+    color: #858585;
+  
+    font-weight: 700;
+}
+  
+.header nav ul li:hover {
+    color: black;
+}
+  
+.header nav ul li a {
+    padding: 10px;
+}
+  
+.header nav ul li .principal {
+    color: black;
+}
+
+.header nav ul span {
+    display: none;
+}
+
+.reponsive, .responsiveActive {
+    display: none;
+}
+
+.navbarActive {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header nav .navbar {
+        display: none;
+    }
+
+    .header nav .navbarActive {
+        background: white;
+
+        position: absolute;
+        top: 7vh;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100vw;
+        height: 90vh;
+
+        padding: 20px 0 40px 0;
+    }
+
+    .header nav .navbarActive li {
+        text-align: center;
+    }
+
+    .reponsive, .responsiveActive {
+        display: block;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        background-color: rgb(77, 77, 77);
+    
+        width: 25px;
+        height: 5px;
+    
+        margin: 5px;
+        transition-duration: 0.3s;
+    }
+
+    .responsiveActive .line1 {
+      transform: rotate(45deg) translate(4.5px, 4px);
+    }
+  
+    .responsiveActive .line2 {
+      opacity: 0;
+    }
+  
+    .responsiveActive .line3 {
+      transform: rotate(-45deg) translate(10px, -10px);    
+    } 
+}

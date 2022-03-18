@@ -1,0 +1,14 @@
+.container {
+    height: 90vh;
+
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+}
+
+.overlayRoot {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

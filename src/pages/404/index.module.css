@@ -1,0 +1,105 @@
+.container {
+    background: rgb(28, 28, 75);
+    color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container h1 {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    background: rgb(38, 91, 126);
+    color: white;
+
+    font-weight: 700;
+
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 10px;
+
+    width: 100px;
+    height: 50px;
+
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.hexagonos .one {
+    position: absolute;
+
+    top: 20vh;
+    left: 25vw;
+
+    width: 150px;
+    height: 150px;
+
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.hexagonos .two {
+    position: absolute;
+
+    left: 27vw;
+    bottom: 33vh;
+
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+
+.hexagonos .three {
+    position: absolute;
+
+    top: 20vh;
+    left: 20vw;
+
+    width: 50px;
+    height: 50px;
+
+    border: 3px solid yellow;
+    border-radius: 50%;
+}
+
+.hexagonos .four {
+    position: absolute;
+
+    top: 40vh;
+    left: 20vw;
+
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+.hexagonos .five {
+    position: absolute;
+
+    top: 41vh;
+    left: 33vw;
+
+    width: 75px;
+    height: 75px;
+
+    border: 3px solid purple;
+    border-radius: 50%;
+}

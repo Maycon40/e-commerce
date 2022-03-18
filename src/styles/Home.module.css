@@ -1,0 +1,128 @@
+/* Container */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.none {
+  display: none;
+}
+
+
+
+/* Main */
+
+.tudo {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  height: 90vh;
+  width: 100vw;
+}
+
+.main {
+  
+}
+
+/* Cadastro */
+
+.formulario {
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario .title {
+  text-align: center;
+}
+
+.form {
+  width: 60vw;
+}
+
+.form fieldset {
+  border: none;
+
+  margin-bottom: 10px;
+}
+
+.form fieldset input {
+  width: 100%;
+  height: 40px;
+
+  border-radius: 10px;
+  border: solid 1px rgb(204, 204, 204);
+
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form fieldset input:focus {
+  border-color: #007fd4;
+  box-shadow: 0 0 7px #00acca;
+
+  outline: none;
+}
+
+.form fieldset textarea {
+  width: 100%;
+  height: 120px;
+
+  border-radius: 10px;
+  border: solid 1px rgb(204, 204, 204);
+
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form fieldset textarea:focus {
+  border-color: #007fd4;
+  box-shadow: 0 0 7px #00acca;
+
+  outline: none;
+}
+
+.form button {
+  background-color: rgb(6, 122, 255);
+  color: #eee;
+
+  width: 100%;
+  height: 50px;
+
+  border: solid 1px rgb(204, 204, 204);
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.form p {
+  color: #858585;
+
+  margin-top: 50px;
+
+  text-align: center;
+}
+
+.form p a {
+  color: #007fd4;
+  text-decoration: underline #007fd4;
+}
+
+/* Footer */
+
+.footer {
+  
+}
+
+@media (max-width: 600px) {
+  
+}
