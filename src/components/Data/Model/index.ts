@@ -1,17 +1,17 @@
 export default [
     {
-        label: "Model X",
+        label: "Next js",
         description: "Order Online for Delivery",
-        image: "https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_960_720.jpg"
+        image: "data:image/png;base64,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"
     },
     {
-        label: "Model Y",
+        label: "React js",
         description: "Order Online for Delivery",
-        image: "https://cdn.pixabay.com/photo/2021/12/23/09/18/tesla-6889042__340.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
     },
     {
-        label: "Model Z",
+        label: "Node js",
         description: "Order Online for Delivery",
-        image: "https://cdn.pixabay.com/photo/2019/07/02/09/32/tesla-4311968__340.jpg"
+        image: "https://img.icons8.com/color/452/nodejs.png"
     }
 ]
