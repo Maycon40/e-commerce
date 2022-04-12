@@ -13,7 +13,7 @@ import Data from "../../Data/Admin";
 
 const Leftbar: NextPage = () => {
     const { leftBar, setLeftBar } = useContext(AuthContext);
-    const myRef = useRef<HTMLDivElement>();
+    const myRef = useRef<any>();
 
     return (
         <>
